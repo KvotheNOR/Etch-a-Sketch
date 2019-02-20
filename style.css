@@ -1,5 +1,30 @@
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: 100%;
+}
+
+#container {
+	height: 100%;
+}
+
+.squareRow {
+	height: 6.25%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: blue;
+}
+
+
+
+.square {
+	width: 6.25%;
+	height: 100%;
+	float: left;
 }
