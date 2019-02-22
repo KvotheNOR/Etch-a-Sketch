@@ -58,11 +58,10 @@ function resetButton() {
 
 	var buttonPlacement = document.getElementsByTagName("BODY")[0];
 	var placeBefore = document.getElementById("container")
-	console.log(buttonPlacement);
 	buttonPlacement.insertBefore(resetButton, placeBefore);
 
 	document.getElementById("reset").addEventListener("click", function() {
-		console.log("clicked");
+		console.log("reset!");
 		let element = document.getElementById("container");
 		while (element.firstChild) {
 			element.removeChild(element.firstChild);
@@ -71,11 +70,3 @@ function resetButton() {
 		createSquareRow(grids);
 	});
 }
-
-/*
-for (var j = 0; j < 16; j++) {
-			var x = document.getElementById("container").childNodes[j];
-			for (var i = 0; i < 16; i++) {
-				x.childNodes[i].classList.remove("square-hover")
-				console.log(x.childNodes[i])
-*/
